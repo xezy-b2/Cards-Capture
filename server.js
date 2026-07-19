@@ -4,12 +4,12 @@ const session = require('express-session');
 const path = require('path');
 const { connectDB } = require('../src/config/db');
 
-const authRoutes = require('./routes/auth');
-const collectionRoutes = require('./routes/collection');
-const tradeRoutes = require('./routes/trades');
-const deckRoutes = require('./routes/deck');
-const battleRoutes = require('./routes/battle');
-const boosterRoutes = require('./routes/booster');
+const authRoutes = require('routes/auth');
+const collectionRoutes = require('routes/collection');
+const tradeRoutes = require('routes/trades');
+const deckRoutes = require('routes/deck');
+const battleRoutes = require('routes/battle');
+const boosterRoutes = require('routes/booster');
 
 const app = express();
 const PORT = process.env.WEB_PORT || 3000;
